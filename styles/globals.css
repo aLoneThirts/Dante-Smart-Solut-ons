@@ -1,0 +1,887 @@
+/* --------------------------------------------- */
+/* >> styles/globals.css                        */
+/* --------------------------------------------- */
+
+/* 1) Temel Değişkenler */
+:root {
+  --primary: #0056b3;
+  --primary-dark: #004494;
+  --secondary: #f8f9fa;
+  --dark: #212529;
+  --light: #ffffff;
+  --transition: 0.3s ease;
+}
+
+/* 2) Reset & Temel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--secondary);
+  color: var(--dark);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+
+/* 3) Linkler */
+a {
+  color: var(--light);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+/* 4) Navbar */
+.navbar {
+  background-color: var(--primary) !important;
+}
+
+.navbar .nav-link {
+  color: var(--light) !important;
+  margin-left: 1rem;
+  transition: color var(--transition);
+}
+
+.navbar .nav-link:hover {
+  color: var(--secondary) !important;
+}
+
+/* 5) Hero Bölümü */
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--light);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+  position: relative;
+  /* overlay’ın üstünde kalsın */
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.hero .btn {
+  background-color: var(--light);
+  color: var(--dark);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  transition: background-color var(--transition), transform var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.hero .btn:hover {
+  background-color: var(--primary-dark);
+  color: var(--light);
+  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* video elementi kullanırsan video sınıfına object-fit ver */
+}
+
+.hero video.hero-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;      /* ihtiyacına göre ayarla */
+  padding-left: 2rem;    /* sol boşluk */
+}
+
+
+
+
+.hero-solid {
+  position: relative;
+  background-color: var(--dark);
+  height: 70vh;
+  padding: 2rem 0;
+}
+
+.hero-solid .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-solid h1,
+.hero-solid p,
+.hero-solid .btn {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo-bg {
+  position: relative;
+  background-color: var(--dark);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.hero-logo-bg .logo-bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  /* %20 opaklık */
+  background-size: 30%;
+  /* %20 boyut */
+  z-index: 1;
+}
+
+.hero-logo-bg .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  /* sola hizalama için */
+  text-align: left;
+  padding: 2rem 1rem;
+}
+
+.hero-logo-bg .hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: var(--light);
+  text-align: left;
+}
+
+.hero-logo-bg .hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-logo-bg .btn {
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.hero-logo-bg .btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Düzen */
+@media (max-width: 768px) {
+  .hero-logo-bg {
+    height: 50vh;
+  }
+
+  .hero-logo-bg .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-logo-bg .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-logo-bg .logo-bg {
+    background-size: 30%;
+  }
+}
+
+/* 6) Section Başlıkları */
+h2,
+h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+/* 7) Özellik / Bölüm Kartları */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover {
+  transition: transform var(--transition), box-shadow var(--transition);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card .btn {
+  margin-top: auto;
+}
+
+.card-img-top {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.section-title {
+  font-weight: 500;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0d6efd;
+  margin: 0.5rem auto 0;
+}
+/* 8) Alternating Arkaplanlar */
+.section-light {
+  background-color: var(--light);
+  padding: 4rem 0;
+}
+
+.section-secondary {
+  background-color: var(--secondary);
+  padding: 4rem 0;
+}
+
+.section h3+.row .card {
+  background-color: var(--secondary);
+}
+
+/* 9) Müşteri Logoları */
+.clients img {
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: filter var(--transition), opacity var(--transition);
+}
+
+.clients img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+/* 10) Footer */
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 3rem 0;
+}
+
+footer a {
+  color: var(--light);
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+.site-footer {
+  background: #111;
+  /* Daha koyu düz renk */
+  font-size: 0.875rem;
+  /* Metinleri biraz küçülttük */
+  line-height: 1.4;
+}
+
+.site-footer.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.footer-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-text {
+  color: #bbb;
+  margin-bottom: 0.5rem !important;
+}
+
+.footer-links .nav-link {
+  color: #bbb;
+  padding: 0.1rem 0 !important;
+  font-size: 0.875rem;
+}
+
+.footer-links .nav-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-copy {
+  display: block;
+  margin-top: 1rem;
+  color: #555;
+  font-size: 0.75rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: #bbb;
+  font-size: 1rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Responsive (küçük ekran) */
+@media (max-width: 576px) {
+  .site-footer .social-icons a {
+    margin-right: 0.3rem;
+    font-size: 0.9rem;
+  }
+}
+
+.site-footer .row.gx-5>.col-md-4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* 11) Responsive Düzen */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+.grayscale-hover {
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.grayscale-hover:hover {
+  filter: none;
+  opacity: 1;
+}
+
+/* Hizmetler Kartları */
+.service-card {
+  border: none;
+  transition: transform 0.3s;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+  object-fit: cover;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay – hizmet kartı üstü */
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 1rem;
+}
+
+.service-card:hover .service-overlay {
+  opacity: 1;
+}
+
+.service-img-wrap {
+  overflow: hidden;
+  height: 180px;
+}
+.service-img-wrap img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.service-card:hover .service-img-wrap img {
+  transform: scale(1.1);
+}
+
+/* ScrollToTop butonun hover rengi */
+button[aria-label="Scroll to top"]:hover {
+  background-color: var(--primary-dark) !important;
+}
+
+header h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+header p.lead {
+  font-size: 1.25rem;
+}
+
+.list-group-item {
+  background-color: var(--secondary);
+  font-weight: 500;
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card .card-title {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.icon-wrapper {
+  background: var(--secondary);
+  border-radius: 50%;
+  padding: 1rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 2rem;
+  height: 2.5rem;
+}
+
+.scroll-down span {
+  display: block;
+  width: 1rem;
+  height: 0.5rem;
+  margin: 0 auto;
+  border-radius: 0.25rem;
+  background: var(--light);
+  animation: scroll-bounce 2s infinite;
+}
+
+@keyframes scroll-bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(0.5rem);
+  }
+
+  60% {
+    transform: translateY(0.3rem);
+  }
+}
+
+/* Responsive küçültme */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero-content {
+    padding-left: 5%;
+  }
+}
+.hero-logo-bg div > span {
+  opacity: 0.2;
+}
+
+.system-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.system-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.system-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.system-img {
+  object-fit: cover;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.system-card:hover .system-img {
+  transform: scale(1.1);
+}
+
+.system-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.system-card:hover .system-overlay {
+  opacity: 1;
+}
+
+.clickable-badge {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clickable-badge:hover {
+  opacity: 0.8;
+}
+
+/* Modal Görseli */
+.modal-body img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Özellikler listesi */
+.modal-body ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+/* Badge küçük kalmasın */
+.modal-body .badge {
+  font-size: 0.9rem;
+  padding: 0.5em 0.75em;
+}
+
+/* Başlık ve içerik */
+.modal-body h6 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* İletişim sayfası */
+.contact-info h5 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contact-info p {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Harita */
+.map-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Küçük ekran uyumu */
+@media (max-width: 991px) {
+  .map-container {
+    height: 250px;
+  }
+}
+
+.news-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.news-link:hover {
+  color: var(--primary);
+}
+
+img.rounded-circle {
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.accordion-flush .accordion-button {
+  border-radius: 0;
+}
+
+/* Hero arka planı */
+.hero-section {
+  position: relative;
+  background: url('/img/hero-bg.jpg') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Koyu yarı saydam katman */
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+
+/* İçerik (logo, başlık, dölüm) */
+.hero-section>.container {
+  position: relative;
+  z-index: 1;
+  /* Overlay’ın üstünde */
+}
+
+/* Metinler beyaz */
+.hero-section h1,
+.hero-section p {
+  color: #fff;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.hero-section > .position-relative {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-logo {
+  max-width: 120px;
+  height: auto;
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.5));
+}
+
+/* Buton stili */
+.hero-section .btn-light {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.hero-section .btn-light:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+.process-card {
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+}
+.process-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.icon-wrap {
+  font-size: 2.5rem;
+  color: #0d6efd;
+}
+.subscribe-form input {
+  max-width: 300px;
+  border-radius: 2px;
+}
+.subscribe-form .btn-primary {
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+.subscribe-form .btn-primary:hover {
+  background: #0b5ed7;
+}
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  z-index: 1000;
+  transition: background 0.2s;
+}
+.scroll-top:hover {
+  background: #0b5ed7;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .hero-section {
+    height: 60vh;
+  }
+ .hero-text {
+  position: relative;
+  max-width: 500px;
+  text-align: left;
+  color: #fff;
+}
+}
+.hero-text::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  background: url('/Logo/Etsy%20Big%20Shop%20Banner.png') center/contain no-repeat;
+  opacity: 0.2;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.hero-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gallery-img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  display: block;
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+  

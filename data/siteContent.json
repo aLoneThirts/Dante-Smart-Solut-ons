@@ -1,0 +1,291 @@
+{
+  "home": {
+    "hero": {
+      "bg": "/public/Logo/Etsy%20Big%20Shop%20Banner.png",
+      "title": "Daha İyi Bir Yaşam İçin Teknoloji",
+      "subtitle": "Dante Smart Solutıons ile iletişimden otomasyona, geleceğe bugün başlayın.",
+      "cta": "Detaylı Bilgi",
+      "ctaLink": "/products"
+    },
+    "sections": [
+      {
+        "icon": "/img/icons/communication.svg",
+        "title": "7/24 Kesintisiz İletişim",
+        "text": "Çağrı kontrolünden video konferansa, tüm kurumsal iletişim ihtiyaçlarınız tek platformda."
+      },
+      {
+        "icon": "/img/icons/security.svg",
+        "title": "Gelişmiş Güvenlik Çözümleri",
+        "text": "Duman, gaz ve hareket sensörleriyle evinizi ve iş yerinizi anında koruma altına alın."
+      },
+      {
+        "icon": "/img/icons/automation.svg",
+        "title": "Akıllı Otomasyon",
+        "text": "Aydınlatma, ısıtma ve perde kontrolünden enerji yönetimine kadar tam entegre otomasyon."
+      }
+    ],
+    "features": [
+      {
+        "icon": "/resimler/91aeb9b4-1236-4331-baff-950c0f5dfc35.jpg",
+        "title": "Kesintisiz İletişim",
+        "text": "Çağrı ve video konferans."
+      },
+      {
+        "icon": "/img/icons/security.svg",
+        "title": "Güvenlik",
+        "text": "Duman, gaz ve hareket sensörleri."
+      },
+      {
+        "icon": "/img/icons/automation.svg",
+        "title": "Otomasyon",
+        "text": "Aydınlatma, ısı kontrol."
+      },
+      {
+        "icon": "/img/icons/integration.svg",
+        "title": "Entegrasyon",
+        "text": "Akıllı cihazlarla tam uyum."
+      }
+    ],
+    "services": [
+      {
+        "title": "Akıllı Aydınlatma",
+        "text": "Işık kontrolünüz cebinizde.",
+        "img": "/resimler/619hoytO8YL._AC_UF1000,1000_QL80_.jpg"
+      },
+      {
+        "title": "Güvenlik Kamerası",
+        "text": "24/7 kayıt ve bildirim.",
+        "img": "/resimler/apartman-bina-kamera sistemi.jpg"
+      },
+      {
+        "title": "Akıllı Termostat",
+        "text": "Enerji tasarrufu ve konfor.",
+        "img": "/resimler/download.jpg"
+      },
+      {
+        "title": "Kapı Kilidi",
+        "text": "Uzak erişim ve yetkilendirme.",
+        "img": "resimler/fonri-akilli-kapi-kilidi-ve-tus-takimi-e-e291.jpg"
+      },
+      {
+        "title": "Kapı Kilidi",
+        "text": "Uzak erişim ve yetkilendirme.",
+        "img": "resimler/fonri-akilli-kapi-kilidi-ve-tus-takimi-e-e291.jpg"
+      },
+      {
+        "title": "Kapı Kilidi",
+        "text": "Uzak erişim ve yetkilendirme.",
+        "img": "resimler/fonri-akilli-kapi-kilidi-ve-tus-takimi-e-e291.jpg"
+      }
+    ],
+    "clients": [
+      {
+        "logo": "/img/client1.png"
+      },
+      {
+        "logo": "/img/client2.png"
+      },
+      {
+        "logo": "/img/client3.png"
+      }
+    ]
+  },
+  "about": {
+    "title": "Dante Smart Solutıons",
+    "subtitle": "Geleceğin Akıllı Ev Sistemlerine Bugün Adım Atın",
+    "text": "Dante Smart Solutions, 2025 yılında kurulan ve akıllı ev otomasyonu, güvenlik sistemleri ile enerji verimliliğini bir araya getiren yenilikçi bir teknoloji girişimidir. Misyonumuz; kullanıcılarımıza konfor, emniyet ve kontrolü tek bir merkezden sunarak yaşam kalitelerini en üst seviyeye taşımaktır.",
+    "mission": {
+      "heading": "Misyonumuz",
+      "body": "Entegre akıllı ev çözümlerimizle hayatınızı kolaylaştırmak, güvenliğinizi artırmak ve enerji tasarrufunuzu en üst düzeye çıkarmak."
+    },
+    "vision": {
+      "heading": "Vizyonumuz",
+      "body": "Akıllı yaşam teknolojilerinde öncü olarak, evlerden işletmelere kadar her mekânda dijital dönüşümü hızlandırmak."
+    },
+    "values": [
+      "Yenilikçilik",
+      "Güvenlik",
+      "Kullanıcı Odaklılık",
+      "Sürdürülebilirlik",
+      "Şeffaflık"
+    ],
+    "team": [
+      {
+        "name": "Taner Sönmez",
+        "role": "Kurucu & CEO"
+      },
+      {
+        "name": "Eren Can Balta",
+        "role": "Kurucu & CEO"
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2025",
+        "event": "Dante Smart Solutıons Kuruluşu"
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Akıllı Aydınlatma",
+      "img": "/resimler/619hoytO8YL._AC_UF1000,1000_QL80_.jpg",
+      "link": "/systems",
+      "category": "Aydınlatma",
+      "short": "Enerji tasarruflu LED kontrol sistemi",
+      "description": "Mobil uygulama ve sesli asistan desteğiyle her odanın ışığını istediğiniz gibi programlayın."
+    },
+    {
+      "id": 1,
+      "name": "Duman ve Gaz Alarmı",
+      "img": "/resimler/download.jpg",
+      "link": "/systems",
+      "category": "TERMOSTAt",
+      "short": "7/24 izleme ve anında bildirim",
+      "description": "Akıllı ev sisteminize entegre, bağlantı kesilse bile yerel sirenle uyarı verir."
+    },
+      {
+      "id": 1,
+      "name": "Duman ve Gaz Alarmı",
+      "img": "/resimler/download.jpg",
+      "link": "/systems",
+      "category": "Gaz Alarmı",
+      "short": "7/24 izleme ve anında bildirim",
+      "description": "Akıllı ev sisteminize entegre, bağlantı kesilse bile yerel sirenle uyarı verir."
+    },
+      {
+      "id": 1,
+      "name": "Duman ve Gaz Alarmı",
+      "img": "/resimler/download.jpg",
+      "link": "/systems",
+      "category": "Gaz Alarmı",
+      "short": "7/24 izleme ve anında bildirim",
+      "description": "Akıllı ev sisteminize entegre, bağlantı kesilse bile yerel sirenle uyarı verir."
+    }
+    
+  ],
+  "systems": [
+    {
+      "id": 1,
+      "name": "Akıllı Aydınlatma",
+      "category": "Aydınlatma",
+      "img": "/img/systems/light-system.jpg",
+      "short": "Oda bazlı ışık kontrolü ve senaryo yönetimi",
+      "description": "Sesli komut ve mobil uygulama entegrasyonu ile evin her köşesini istediğiniz gibi yönetin, enerji verimliliğini artırın ve yaşam alanınıza modern bir dokunuş katın.",
+      "features": [
+        "Uzaktan erişim ve kontrol",
+        "Programlanabilir ışık senaryoları",
+        "Enerji tüketimi izleme",
+        "Sesli asistan uyumluluğu",
+        "Otomatik açma/kapama sensörleri"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Güvenlik Kamerası",
+      "category": "Güvenlik",
+      "img": "/img/systems/camera-system.jpg",
+      "short": "HD çözünürlükte 7/24 kayıt",
+      "description": "Hareket algılama, gece görüşü ve anlık bildirim özellikleriyle evinizi veya iş yerinizi 7/24 güvence altına alın. Mobil cihazınızdan canlı izleme ve kayıtları inceleme imkanı sunar.",
+      "features": [
+        "Full HD 1080p görüntü",
+        "Gece görüş (infrared)",
+        "Hareket ve ses algılama",
+        "Anlık mobil bildirimler",
+        "Bulut ve yerel depolama seçenekleri"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Akıllı Termostat",
+      "category": "Konfor",
+      "img": "/img/systems/thermostat-system.jpg",
+      "short": "Otomatik sıcaklık optimizasyonu",
+      "description": "Hafta içi/sonu programlamaları, konum bazlı ısı yönetimiyle enerji tasarrufu yapın ve her zaman ideal sıcaklıkta bir ortama sahip olun. Klima ve kombi sistemleriyle uyumludur.",
+      "features": [
+        "Akıllı öğrenme algoritması",
+        "Uzaktan sıcaklık kontrolü",
+        "Enerji tüketim raporları",
+        "Çoklu bölge desteği",
+        "Hava durumu entegrasyonu"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Akıllı Kapı Kilidi",
+      "category": "Güvenlik",
+      "img": "resimler/fonri-akilli-kapi-kilidi-ve-tus-takimi-e-e291.jpg",
+      "short": "Anahtarsız giriş ve uzaktan yetkilendirme",
+      "description": "Akıllı telefonunuzla kapınızı kilitleyin veya açın, misafirleriniz için geçici erişim kodları oluşturun ve kapı hareketlerini anlık olarak takip edin. Geleneksel kilitlerle uyumludur.",
+      "features": [
+        "Parmak izi okuyucu",
+        "Şifreli giriş",
+        "Mobil uygulama ile kontrol",
+        "Ziyaretçi geçmişi kaydı",
+        "Otomatik kilitleme özelliği"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Duman ve Gaz Alarmı",
+      "category": "Güvenlik",
+      "img": "/resimler/download.jpg",
+      "short": "7/24 izleme ve anında bildirim",
+      "description": "Akıllı ev sisteminize entegre, duman, doğalgaz ve karbonmonoksit sızıntılarını tespit eder. Bağlantı kesilse bile yerel sirenle uyarı verir ve mobil cihazınıza anında bildirim gönderir.",
+      "features": [
+        "Çoklu sensör teknolojisi (duman, gaz, CO)",
+        "Yüksek sesli siren",
+        "Mobil bildirim ve uzaktan uyarı",
+        "Düşük pil uyarısı",
+        "Test modu"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Yeni Ürün Lansmanı",
+      "excerpt": "Dante Smart Solutions’ın ilk akıllı ev paketi artık satışta!",
+      "img": "/img/news1.jpg",
+      "link": "/news/1"
+    },
+    {
+      "id": 2,
+      "title": "Ar-Ge Merkezimiz Açıldı",
+      "excerpt": "İstanbul’daki yeni Ar-Ge merkezimiz hizmete girdi.",
+      "img": "/img/news2.jpg",
+      "link": "/news/2"
+    }
+  ],
+  "useCases": [
+    {
+      "id": 1,
+      "title": "Sabah Rutini Otomasyonu",
+      "img": "/img/usecases/morning.jpg",
+      "text": "Alarm çaldığında perdeler açılır, ışıklar kısmen yanar ve kahve makinesi otomatik çalışır."
+    },
+    {
+      "id": 2,
+      "title": "Güvenlik Turu",
+      "img": "/img/usecases/security.jpg",
+      "text": "Evin çevresindeki kameralar tarama yapar, şüpheli hareket algıladığında anında bildirim gönderir."
+    },
+    {
+      "id": 3,
+      "title": "Enerji Tasarrufu Modu",
+      "img": "/img/usecases/energy.jpg",
+      "text": "Evde kimse yoksa termostat ve aydınlatma otomatik kısılır, dönüşte eski ayarlara geri döner."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Sistem kurulumu ne kadar sürer?",
+      "a": "Yaklaşık 2–3 saat içinde tamamlanır; ek bileşen sayısına göre değişir."
+    },
+    {
+      "q": "Uyumlu akıllı asistanlar hangileri?",
+      "a": "Google Assistant, Amazon Alexa ve Apple HomeKit ile tam entegrasyon."
+    }
+  ]
+}
