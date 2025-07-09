@@ -16,6 +16,9 @@ Bu proje, Dante Smart Solutions için geliştirilen **akıllı ev sistemleri** �
   - Node.js & npm (frontend derleme, bağımlılık yönetimi)  
 - **Veri Depolama**  
   - Harici veritabanı: **Kullanılmadı** (JSON veya dosya tabanlı veri)
+ 
+- ![image](https://github.com/user-attachments/assets/8ea9159a-bb17-462b-9cf2-883ee9789c9c)
+
 
 ## ✨ Başlıca Özellikler
 - **Dinamik Ürün Listesi:** React üzerinden JSON’dan çekip listeler  
